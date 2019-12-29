@@ -52,7 +52,14 @@ def article_detail_api_view(request, pk):
         return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
 
+'''
+    ********* BELOW IS THE CLASS BASED VIEW
+
+'''
+
 # class based view api response
+
+
 class ArticleListCreateAPIView(APIView):
 
     def get(self, request):
